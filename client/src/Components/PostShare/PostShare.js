@@ -24,7 +24,7 @@ const PostShare = () => {
   return (
     <div className='PostShare'>
       <img src={ProfileImg} alt="Profile" />
-      <div>
+      <div className='inputShare'>
          <input type="text" placeholder="What's happening?" />
          <div className='postOptions'>
          <div className="options" style={{ color: "var(--photo)" }}

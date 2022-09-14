@@ -20,7 +20,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   background-image: linear-gradient(106.23deg, #f99827, #f95f35 100%);
+   background-image: linear-gradient(106.23deg, #009fc7, #4A4EB7 100%);
    border-radius: 5px;
    padding: 4px;
    color: white;
@@ -29,4 +29,9 @@
 
 .s-icon:hover {
    cursor: pointer;
+}
+
+.logo {
+   width: 50px;
+   padding-left: 5px;
 }

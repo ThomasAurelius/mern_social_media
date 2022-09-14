@@ -9,12 +9,14 @@
    position: relative;
    margin-top: 1rem;
    z-index: 1;
+   padding: .75rem;
 }
 
 .follower {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 90%;
 }
 
 .follower>div {
