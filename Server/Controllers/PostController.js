@@ -2,7 +2,7 @@ import PostModel from "../Models/postModel.js";
 import mongoose from "mongoose";
 import UserModel from "../Models/userModel.js";
 
-// Create
+// Create post
 
 export const createPost = async (req, res) => {
    const newPost = new PostModel(req.body)
@@ -27,7 +27,7 @@ export const getPost = async(req,res) => {
    }
 };
 
-//update a post
+//Update a post
 export const updatePost = async (req, res) => {
    const postId = req.params.id
    const {userId} = req.body
@@ -48,6 +48,7 @@ export const updatePost = async (req, res) => {
 };
 
 //Delete a post
+//Add admin access to delete posts.
 
 export const deletePost = async (req,res) => {
    const id = req.params.id   
