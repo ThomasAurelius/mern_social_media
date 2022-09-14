@@ -6,8 +6,8 @@ import Auth from "./pages/Auth/Auth";
 function App() {
   return (
     <div className="App">
-      {/*  <Home /> */}
-      <Profile /> 
+      <Home />
+      {/* <Profile /> */}
       {/* <Auth /> */}
         <div className='blur' style={{top: '-8%', right: "0"}}>
         

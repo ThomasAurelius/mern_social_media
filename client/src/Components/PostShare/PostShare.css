@@ -80,3 +80,18 @@
    object-fit: cover;
    border-radius: .5rem;;
 }
+
+@media (max-width: 1200px) {
+   .PostShare {
+      flex-direction: column;
+   }
+
+   .postOptions {
+      
+   }
+
+   .options {
+      font-size: 10px;
+      flex-direction: column;
+   }
+}
