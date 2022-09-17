@@ -54,6 +54,11 @@
   border: 1px solid #009fc7;
 }
 
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
