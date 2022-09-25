@@ -1,31 +1,33 @@
 .FollowersCard {
-   width: 92%;
+   width: 100%;
    border-radius: 0.7rem;
    gap: 1rem;
    display: flex;
    flex-direction: column;
    font-size: 13px;
+   padding-bottom: 10px;   
    background-color: var(--cardColor);
-   position: relative;
-   margin-top: 1rem;
-   z-index: 1;
-   padding: .75rem;
+   
+}
+
+.FollowersCard > h3 {
+   padding-inline: 1rem;
 }
 
 .follower {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 90%;
 }
 
 .follower>div {
    display: flex;
    gap: 10px;
-   align-items: center;
+   padding-inline: 10px;
 }
 
-.followerImg {
+
+.followerImage {
    width: 3.2rem;
    height: 3.2rem;
    border-radius: 50%;
@@ -34,7 +36,7 @@
 .name {
    display: flex;
    flex-direction: column;
-   align-items:  flex-start;
+   align-items: flex-start;
    justify-content: center;
 }
 
@@ -46,4 +48,18 @@
    height: 2rem;
    padding-left: 20px;
    padding-right: 20px;
+}
+
+.UnfollowButton {
+   color: #009fc7;
+   border: 2px solid blue;
+   cursor: pointer;
+   background: transparent;
+}
+
+.FollowersCard>span {
+   font-weight: bold;
+   color: #009fc7;
+   align-self: center;
+   cursor: pointer;
 }

@@ -1,20 +1,20 @@
 import React from 'react'
 import './TrendCard.css'
-
-import { TrendData } from '../../Data/TrendData'
-
+import {TrendData} from '../../Data/TrendData.js'
 const TrendCard = () => {
   return (
-    <div className='TrendCard'>
-      <h3>Trends for you</h3>
-      {TrendData.map((trend) => (
-         <div className="trend" key={trend.name}>
-            <span>{trend.name}</span>
-            <span>{trend.shares}k Shares</span>
-         </div>
-      ))}
+   <div className="TrendCard">
+       <h3>Trends for you</h3>
 
-    </div>
+       {TrendData.map((trend, id)=>{
+            return(
+                <div className="trend" key={id}>
+                    <span>#{trend.name}</span>
+                    <span>{trend.shares}k shares</span>
+                </div>
+            )
+       })}
+   </div>
   )
 }
 

@@ -1,5 +1,3 @@
-
-
 :root {
   --yellow: #f5c32c;
   --orange: #fca61f;
@@ -7,51 +5,48 @@
   --gray: rgba(36, 45, 73, 0.65);
   --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
   --hrColor: #cfcdcd;
-  --cardColor: rgba(255, 255, 255, 0.64);
-  --buttonBg: linear-gradient(98.63deg, #009fc7 0%, #4A4EB7 100%);
-  --buttonBg2: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --cardColor: rgba(255, 255, 255, 0.74);
+  --buttonBg: linear-gradient(98.63deg, #009fc7 0%, blue 100%);
   --inputColor: rgba(40, 52, 62, 0.07);
   --photo: #4CB256;
   --video: #4A4EB7;
   --location: #EF5757;
-  --schedule: #E1AE4A;
-  --main: #009fc7;  
+  --shedule: #E1AE4A;
 }
 
 .App {
   overflow: hidden;
   color: var(--black);
-  background-color: #f3f3f3;
-  padding: 1rem;
+  background: #f3f3f3;
+  padding: 1rem 1rem;
 }
 
+/* blur */
 .blur {
   position: absolute;
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background-color: #a6ddf0;
+  background: #009fc7;
   filter: blur(72px);
-  
 }
 
 .button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color:white;
-  background: var(--buttonBg);
+  justify-content: center;
+  color: white;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
   transition: all 100ms ease-out;
 }
 
 .button:hover {
+  color: var(--orange);
+  border: 2px solid var(--orange);
   cursor: pointer;
-  background: white;
-  color: var(--video);
-  transform: scale(1.05);
-  border: 1px solid #009fc7;
+  background: transparent;
 }
 
 .button:disabled {
@@ -59,6 +54,40 @@
   pointer-events: none;
 }
 
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+
+
+/* Form Styling */
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infoInput {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+}
+
+.infoForm>div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+
+.infoButton {
+  width: 6rem;
+  height: 2rem;
+  align-self: flex-end;
 }

@@ -2,22 +2,27 @@
    display: flex;
    flex-direction: column;
    gap: 2rem;
-
 }
 
+
 .navIcons {
+   margin-top: 1rem;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   padding: 1rem;
-   background-color: var(--cardColor);
-   border-radius: .5rem;
-   z-index: 1;
+}
+
+.navIcons>a>img {
+   width: 1.5rem;
+   height: 1.5rem;
 }
 
 .navIcons>img {
    width: 1.5rem;
    height: 1.5rem;
+}
+
+.navIcons>img:hover {
+   cursor: pointer;
 }
 
 .r-button {
