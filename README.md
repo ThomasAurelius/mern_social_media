@@ -1,4 +1,4 @@
-## ![Logo](./public/ta_favicon.png) Social Media Clone
+## ![Logo](./ta_favicon.png) Social Media Clone
 
 **Social Media Clone** 
 
