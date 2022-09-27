@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import { userChats } from "../../api/ChatRequests";
 import { useDispatch, useSelector } from "react-redux";
 import { io } from "socket.io-client";
+import NewChatModal from "../../Components/NewChatModal/NewChatModal";
+import ChatUsers from "../../Components/ChatUsers/ChatUsers";
 
 const Chat = () => {
   const dispatch = useDispatch();
@@ -88,6 +90,7 @@ const Chat = () => {
             ))}
           </div>
         </div>
+        <NewChatModal />
       </div>
 
       {/* Right Side */}
