@@ -19,3 +19,22 @@
    align-items: flex-start;
    gap: 1.5rem;
 }
+
+.Post_header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+}
+
+.Post_header_left {
+   display: flex;
+   align-items: center;
+   gap: 1rem;  
+}
+
+.Post_header_left img {
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+}
