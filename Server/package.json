@@ -6,7 +6,9 @@
 	"proxy": "http://localhost:5000/",
 	"type": "module",
 	"scripts": {
-		"start": "nodemon index.js"
+		"start": "node index.js",
+		"server": "nodemon index.js"
+		
 	},
 	"author": "",
 	"license": "ISC",
@@ -23,5 +25,9 @@
 		"npm": "8.15.0",
 		"nodemon": "^2.0.16",
 		"path": "^0.12.7"
+	},
+	"engines": {
+		"node": "16.17.0",
+		"npm": "8.15.0"
 	}
 }
